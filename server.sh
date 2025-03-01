@@ -5,8 +5,9 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RESET='\033[0m'
 
-CPU_MODEL=""
-PORT=8080
+if [ -z "$PORT" ]; then
+  PORT=8080
+fi
 
 # Miniconda installation path
 MINICONDA_DIR=~/miniconda3
